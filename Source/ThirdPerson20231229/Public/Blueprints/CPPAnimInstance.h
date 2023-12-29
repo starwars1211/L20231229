@@ -18,7 +18,15 @@ public:
 
 	virtual void  NativeUpdateAnimation(float Deltaseconds) override;
 
-	UPROPERTY(BlueprintReadOnly,EditAnywhere,Category = "Stat")
-	float Speed;
-	
+	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = "Stat")
+	float GroundSpeed;
+
+	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = "Stat")
+	bool ShouldMove;
+
+	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = "Stat")
+	bool IsFalling;
+
+	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = "Stat")
+	FVector Velocity;
 };
